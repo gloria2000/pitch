@@ -451,6 +451,47 @@ span.psw {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;} 
+
 </style>
 	<script>
 $(document).ready(function(){
@@ -539,9 +580,27 @@ function closeNav() {
   <a href="#">Projects</a>
   <a href="#">Filter</a>
 </div>
-<p style="color:white;"> List of ideas.... <br>... <br>... <br>... </p>
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn">Location</button>
+  <div class="dropdown-content">
+    <a href="#">Kottayam</a>
+    <a href="#">Tvm</a>
+    <a href="#">Klm </a>
+     <a href="#">Alp </a>
+<a href="#">Knr </a>
+<a href="#">Kzd </a>
+<a href="#">Wyd </a>
+<a href="#">Pta </a>
+<a href="#">mlp </a>
+<a href="#">ksg </a>
+<a href="#">idk </a>
+  </div>
+</div>
+<center>
+<p><br><br><br><br></p>
+<p style="color:white;" align:"center;"> List of ideas<br>Education<br>Medical<br>Commerce<br>Others</p>
 <p  style="color:white;"> Talk with contibutor about the project you are interested in <a href="chat.html">here</a> </p>
-
+</center>
 
 
 </body>
